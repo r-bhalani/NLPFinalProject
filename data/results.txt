@@ -1,0 +1,40 @@
+Train on 2848
+Test on 712
+
+Train on original (0% adversarial)
+Test on original
+{'eval_exact_match': 67.13483146067416, 'eval_f1': 76.9494442977546}
+Test on adversarial
+{'eval_exact_match': 23.59550561797753, 'eval_f1': 31.343909119121612}
+
+
+Train on 25% adversarial
+Test on original
+{'eval_exact_match': 63.90449438202247, 'eval_f1': 74.40498751069204}
+Test on adversarial
+{'eval_exact_match': 34.831460674157306, 'eval_f1': 45.24858266856346}
+
+Train on 50% adversarial
+Test on original
+{'eval_exact_match': 64.18539325842697, 'eval_f1': 72.64932983884096}
+Test on adversarial
+{'eval_exact_match': 33.42696629213483, 'eval_f1': 45.98682604299156}
+
+Train on 75% adversarial
+Test on original
+{'eval_exact_match': 49.859550561797754, 'eval_f1': 60.45653201542083}
+Test on adversarial
+{'eval_exact_match': 27.10674157303371, 'eval_f1': 40.14662669892348}
+
+Train on 100% adversarial
+Test on original
+{'eval_exact_match': 29.775280898876403, 'eval_f1': 40.48994006516695}
+Test on adversarial
+{'eval_exact_match': 29.49438202247191, 'eval_f1': 36.555009074424134}
+
+List of figures in paper:
+Original SQUAD Example
+adversarial SQUAD Example
+Performance of both test sets on original train set (table)
+Exact match graph
+f1 score graph

@@ -94,14 +94,17 @@ def main():
         # remove SNLI examples with no label
         dataset = dataset.filter(lambda ex: ex['label'] != -1)
     
+    # here is where the train and eval datasets are actually set
     train_dataset = None
     eval_dataset = None
     train_dataset_featurized = None
     eval_dataset_featurized = None
     if training_args.do_train:
+        # dataset['train'].to_json('../data/train_data.json')
         train_dataset = dataset['train']
         if args.max_train_samples:
             train_dataset = train_dataset.select(range(args.max_train_samples))
+        # train_dataset.to_json('data/remaining_75_percent.json')
         train_dataset_featurized = train_dataset.map(
             prepare_train_dataset,
             batched=True,
