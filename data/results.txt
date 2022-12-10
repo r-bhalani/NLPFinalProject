@@ -31,10 +31,3 @@ Test on original
 {'eval_exact_match': 29.775280898876403, 'eval_f1': 40.48994006516695}
 Test on adversarial
 {'eval_exact_match': 29.49438202247191, 'eval_f1': 36.555009074424134}
-
-List of figures in paper:
-Original SQUAD Example
-adversarial SQUAD Example
-Performance of both test sets on original train set (table)
-Exact match graph
-f1 score graph
